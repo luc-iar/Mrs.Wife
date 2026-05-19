@@ -547,6 +547,27 @@ video {
 }
 
 @media only screen and (min-width: 2000px) {
+    .title {
+        font-size: 7rem;
+    }
+    .subtitle {
+        font-size: 2rem;
+    }
+    .time {
+        font-size: 1.5rem;
+    }
+    .result-title {
+        font-size: 8rem;
+    }
+    .subheading {
+        font-size: 2rem;
+    }
+    .message {
+        font-size: 1.8rem;
+    }
+    .sub-message {
+        font-size: 5rem;
+    }
     .result-info-container {
         gap: 80px;
     }
