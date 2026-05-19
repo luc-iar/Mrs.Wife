@@ -167,7 +167,7 @@ html, body {
 }
 
 .energy-bar {
-    width: 70%;
+    width: 100%;
     height: 20px;
     background-color: white;
     border: solid black 1px;
@@ -215,6 +215,11 @@ html, body {
 }
 
 /*---------CALENDAR-------------*/
+
+.calendar {
+    height: 100%;
+    padding-top: 5%;
+}
 
 .wrapper-planner {
     background-image: url(../images/calendar.jpg);
@@ -278,7 +283,7 @@ html, body {
 
 .task {
     width: 95%;
-    height: 32px;
+    height: 5%;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -443,59 +448,13 @@ video {
 
 /*----------- Result Screen ----------------*/
 
-/* #result-screen {
-    transform: translate(-50%, -50%);
-    max-width: 80%;
-    height: 80%;
-    background-image: url(../images/calendar.jpg);
-    background-position: center;
-    border-radius: 50px 0px 0px 50px;
-    border: solid 6px black;
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    right: -25%;
-    display: none;
-    flex-direction: column;
-    overflow: auto;
-    overflow-x: hidden;
-    scrollbar-width: thin;
-} */
-
 #result-screen {
     display: none;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     gap: 18px;
 }
-
-/* .sticky {
-    background-color: #4daab8;
-    position: sticky;
-    top: 0;
-    height: 90px;
-    width: 100%;
-    flex-shrink: 0;
-    z-index: 4;
-    border-bottom: solid 3px black;
-} */
-
-/* .sticky-text {
-    font-family: "Franklin Gothic";
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 3% 0% 8% 4%;
-} */
-
-/* .result-background {
-    width: 90%;
-    opacity: 25%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    left: 50%;
-    top: 95%;
-    z-index: -1;   
-} */
 
 .result-title {
     color: black;
