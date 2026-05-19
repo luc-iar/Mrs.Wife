@@ -546,6 +546,18 @@ video {
     transition: scale 0.8s;
 }
 
+@media only screen and (min-width: 2000px) {
+    .result-info-container {
+        gap: 80px;
+    }
+    .info-title {
+        height: 120px;
+    }
+    .info-text01 {
+        font-size: 1.5;
+    }
+}
+
 /*--------Comments----------*/
 
 #speech-bubble {
