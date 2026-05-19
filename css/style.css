@@ -568,6 +568,22 @@ video {
     .sub-message {
         font-size: 5rem;
     }
+    .calendar-text {
+        font-size: 2.5rem;
+    }
+    .scenario {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .description {
+        font-size: 1.8rem;
+    }
+    .button {
+        font-size: 2rem;
+    }
+    .comment-text {
+        font-size: 1.6rem;
+    }
     .result-info-container {
         gap: 80px;
     }
@@ -576,6 +592,17 @@ video {
     }
     .info-text01 {
         font-size: 1.5;
+    }
+    .title-game-over {
+        font-size: 4rem;
+    }
+    .description-game-over {
+        font-size: 1.8rem;
+        line-height: 2;
+        margin: 8% 15%;
+    }
+    #fail-screen .button {
+        font-size: 2.5rem;
     }
 }
 
