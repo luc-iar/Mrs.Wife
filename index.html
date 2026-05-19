@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="mini game">
+        <meta name="keywords" content="Tradwife Gender roles">
+        <meta name="author" content="Lucia Roth">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TradGame</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    </head>
+    <body>
+    <!-- <audio autoplay loop>
+        <source src="images/music.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio> -->
+    <section class="stickyone">
+        <div class="wrapper-planner">
+            <div class="calendar">
+                    <h1 class="title">Day Planner</h1>
+                    <h2 class="subtitle">How to spend my day</h2>
+                <div class="task">
+                    <p class="time">07:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus active" data-target="Q1">        
+                </div>
+                <hr class="hr-fix" />
+                <div class="task">
+                    <p class="time">09:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus" data-target="Q2">
+                </div>
+                <hr class="hr-fix" />
+                <div class="task">
+                    <p class="time">11:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus" data-target="Q3">
+                </div>
+                <hr class="hr-fix" />
+                <div class="task">
+                    <p class="time">13:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus" data-target="Q4">
+                </div>
+                <hr class="hr-fix" />
+                <div class="task">
+                    <p class="time">15:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus" data-target="Q5">
+                </div>
+                <hr class="hr-fix" />
+                <div class="task">
+                    <p class="time">17:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus" data-target="Q6">
+                </div>
+                <hr class="hr-fix" />
+                <div class="task">
+                    <p class="time">19:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus" data-target="Q7">
+                </div>
+                <hr class="hr-fix" />
+                <div class="task">
+                    <p class="time">21:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus" data-target="Q8">
+                </div>
+                <hr class="hr-fix" />
+                <div class="task">
+                    <p class="time">23:00</p>
+                    <span class="calendar-text"></span>
+                    <img src="images/plus.svg" class="plus" data-target="Q9">
+                </div>
+                <hr class="hr-fix" />
+            </div>
+        <div id="result-screen">
+            <h1 class="result-title"></h1>
+            <p class="subheading"></p>
+            <h2 class="message"></h2>
+            <p class="sub-message"></p>
+            <img src="images/scroll-animation.png" class="result-next">
+        </div>      
+        <div class="result-info-container">
+                <div class="identity">
+                    <img src="images/identity.png" class="info-title">
+                    <div class="info-text01-container">
+                        <p class="info-text01">- You always put your own needs last<br> - You stop listening to your feelings and intuition <br> - You lose trust in your abilities <br> - You forget to nurture you passion and interests</p>
+                    </div>
+                </div>
+                <div class="independency">
+                    <img src="images/independency.png" class="info-title">
+                    <div class="info-text01-container">
+                        <p class="info-text01">Especially financial dependency & What to be aware of: <br> - An uneven power dynamic <br> - Contributing to your retirement savings <br> - Access to all accounts <br> - Difficulty re-entering the workforce <br> - Losing important life skills (bills, taxes, bureaucratic tasks)</p>
+                    </div>
+                </div>
+                <a href="invisible-strings.html" target="_blank"><img src="images/more-button.svg" class="redirect"></a>
+            </div>   
+        </div>
+
+        <div class="star-container">
+            <img src="images/star-inactive.svg" class="star" data-target="Q1">
+            <img src="images/star-inactive.svg" class="star" data-target="Q2">
+            <img src="images/star-inactive.svg" class="star" data-target="Q3">
+            <img src="images/star-inactive.svg" class="star" data-target="Q4">
+            <img src="images/star-inactive.svg" class="star" data-target="Q5">
+            <img src="images/star-inactive.svg" class="star" data-target="Q6">
+            <img src="images/star-inactive.svg" class="star" data-target="Q7">
+            <img src="images/star-inactive.svg" class="star" data-target="Q8">
+            <img src="images/star-inactive.svg" class="star" data-target="Q9">
+        </div>
+
+        <div class="energy-container">
+            <div class="energy-bar">
+                <div class="energy-segment"></div>
+                <div class="energy-segment"></div>
+                <div class="energy-segment"></div>
+                <div class="energy-segment"></div>
+                <div class="energy-segment"></div>
+                <div class="energy-segment"></div>
+                <div class="energy-segment"></div>
+                <div class="energy-segment"></div>
+                <div class="energy-segment"></div>
+            </div>
+            <img src="images/energy.png" class="energy-icon">
+        </div>
+        <img src="images/stats-background.png" class="stats-background">
+        <!-- <div class="stats-background"></div> -->
+            
+<!-----------Questions--------------->
+
+        <div class="question-background" id="Q1">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">How do you start your mornings?</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description01">I get up together with my husband to share the tasks in the morning</p>
+                        <button type="button" class="button option" data-final="true" data-action="add" data-text="Share morning tasks">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description02">I wake up early to make myself look presentable, make breakfast and prep my husbands lunch so he can sleep longer.</p>
+                        <button type="button" class="button option" data-action="remove" data-text="Let husband sleep">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-background" id="Q2">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">Now that you’re ready for your day, what’s the next step?</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description01">I will leave the house to go to my job</p>
+                        <button type="button" class="button option" data-fail="true">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description02">There is no need for me to leave the house, since my husband is the sole provider of this family</p>
+                        <button type="button" class="button option" data-action="remove" data-text="Stay home">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-background" id="Q3">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">You found a little bit of downtime, how do you spend it</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description02">Learn about his favourite football team to make sure you always have something to talk about</p>
+                        <button type="button" class="button option" data-action="remove" data-text="Learn more about his interests">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description01">Spend some time on your own hobbies</p>
+                        <button type="button" class="button option" data-comment="true" data-target="comment01" data-action="add" data-text="Enjoy my hobby">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-background" id="Q4">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">You’re planning what to eat for dinner</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description01">Buy your husbands favourite meal from the store</p>
+                        <button type="button" class="button option" data-action="add" data-text="Go buy a premade meal">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description02">Cook dinner from scratch</p>
+                        <button type="button" class="button option" data-action="remove" data-text="Cook dinner from scratch">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-background" id="Q5">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">You’re in the shop to buy groceries for dinner:</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description02">Only buy the essentials</p>
+                        <button type="button" class="button option" data-action="remove" data-text="Only buy the essentials">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description01">Pick up an extra treat for yourself</p>
+                        <button type="button" class="button option" data-comment="true"  data-target="comment02" data-action="add" data-text="Get yourself a treat">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-background" id="Q6">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">Your card declines in the Supermarket, what do you do?</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description02">Call my husband to ask what’s going on</p>
+                        <button type="button" class="button option" data-action="remove" data-text="Call my husband">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description01">Check my account to see what the issue is</p>
+                        <button type="button" class="button option" data-comment="true"  data-target="comment03" data-action="add" data-text="Check my account">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-background" id="Q7">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">Your husband stayed out after work without letting you know, what do you do?</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description02">He deserves his freedom and I shouldn't bother him with my feelings</p>
+                        <button type="button" class="button option" data-action="remove" data-text="Don't bother him">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description01">I’m upset because I have dinner ready for him, so I call him to find out what he’s up to</p>
+                        <button type="button" class="button option" data-action="add" data-text="Call him and ask">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-background" id="Q8">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">You’ve had a really stressful day and your husband finally comes home</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description01">Share your thoughts and worries to relive some of your stress</p>
+                        <button type="button" class="button option" data-action="add" data-text="Share your feelings">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description02">Keep my worries to myself, since my husband deserves peace after his even more stressful day</p>
+                        <button type="button" class="button option" data-action="remove" data-text="Keep my feelings to myself">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-background" id="Q9">
+            <div class="wrapper-question">
+                <img src="images/shape02.png" class="shape01"><img src="images/shape01.png" class="shape02">
+                <h2 class="scenario">To end the night your husband wants to watch his favourite show again, what do you do?</h2>
+                <div class="row">
+                    <div class="container">
+                        <p class="description description01">Tell him I've been looking forward to watching my show</p>
+                        <button type="button" class="button option final-button" data-final="true" data-action="add">A</button>
+                    </div>
+                    <div class="container">
+                        <p class="description description02">I agree, since he deserves it after such a hard day of work</p>
+                        <button type="button" class="button option final-button" data-final="true" data-action="remove">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-intro">
+            <img src="images/intro01.png" class="intro-text active">
+            <img src="images/intro02.png" class="intro-text">
+            <img src="images/intro03.png" class="intro-text">
+            <img src="images/intro-shape.png" class="intro-shape">
+            <img src="images/dots-bg.png" class="dots-bg">
+
+            <img src="images/arrow-right.svg" id="arrow">     
+            <img src="images/start-button.svg" id="start-button" class="start-button-move"> 
+        </div>
+
+        <div class="wrapper-start">
+            <img src="./images/logo-animation.gif" class="logo-animation">
+            <img src="./images/scroll-animation.png" class="scroll-icon">
+        </div>
+
+
+        <div id="fail-screen">
+            <img src="images/shape01.png" class="shape01"><img src="images/shape01.png" class="shape02">
+            <h1 class="title-game-over">GAME OVER</h1>
+            <p class="description-game-over">A true Tradwife doesn't consern herself with finances. Your home and husband needs your full attention</p>
+            <button onclick="location.reload()" class="button">TRY AGAIN</button> 
+        </div>
+
+            <img src="images/01.gif" class="character active" id="first-character">
+            <img src="images/02.gif" class="character character-notfirst">
+            <img src="images/03.gif" class="character character-notfirst">
+            <img src="images/04.gif" class="character character-notfirst">
+            <img src="images/05.gif" class="character character-notfirst">
+            <img src="images/06.gif" class="character character-notfirst">
+            <img src="images/07.gif" class="character character-notfirst">
+            <img src="images/08.gif" class="character character-notfirst">
+            <img src="images/09.gif" class="character character-notfirst">
+            <img src="images/09.gif" class="character character-notfirst">
+
+        <!-- <div id="result-screen">
+            <div class="sticky"><p class="sticky-text">Results:</p></div>
+            <h1 class="result-title"></h1>
+            <p class="subheading"></p>
+            <h2 class="message"></h2>
+            <p class="sub-message"></p>
+            <div class="result-info-container">
+                <div class="identity">
+                    <img src="images/shape.png" class="identity-shape">
+                    <h3 class="info-title">Loss of Identity</h3>
+                    <div class="info-text01-container">
+                        <p class="info-text01">It's expected of a housewife to always prioritise her family’s needs and to always put her own needs last. This affects her physical but also mental well-being over time. In their household the husband is seen as the leader and decision maker whilst the housewife</p>
+                        <p class="info-text01">submits to him. He always has the last word and his decisions are not to be questioned. This mentality causes the wife to question or not trust in her own abilities because she is used to modelling her life after everyone else's needs, slowly forgetting her own passions and identity.</p>
+                    </div>
+                </div>
+                <div class="independency">
+                    <img src="images/shape.png" class="independence-shape">
+                    <h3 class="info-title">Loss of Independency</h3>
+                    <div class="info-text01-container">
+                        <p class="info-text02">By staying home and devoting your life to your family, you are also giving up your financial independency. It is important to be aware of the possible consequences that come with relying on someone financially. Financial dependency can create an uneven power dynamic.</p>
+                        <p class="info-text02">What to be aware of: <br> - Paying into your retirement savings<br> - Having access to all accounts <br> - It might be more difficult to re-enter the workforce in case of a divorce <br> - Responsibilities of bills, taxes and bureaucratic tasks often fall on the husband resulting in a loss of important life skills.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="invisible-strings.html"><img src="images/more-button.svg" class="redirect"></a>
+        </div> -->
+
+        <div id="speech-bubble">
+            <img src="images/speech-bubble.svg">
+            <p id="comment01" class="comment-text">What even is my hobby?</p>
+            <p id="comment02" class="comment-text">Oh I think my allowance doesn't cover that!</p>
+            <p id="comment03" class="comment-text">Wait, I don't have access to his account!</p>
+        </div>
+
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html>
