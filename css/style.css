@@ -572,11 +572,11 @@ video {
         font-size: 2.5rem;
     }
     .scenario {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1.2;
     }
     .description {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .button {
         font-size: 2rem;
@@ -1216,4 +1216,70 @@ video {
     align-self: center;
     text-align: center;
     margin:0 auto;
+}
+
+@media only screen and (min-width: 2000px) {
+    .nav a {
+        font-size: 1.7rem;
+    }
+    .beige-subheading {
+        font-size: 2.5rem;
+    }
+    .beige-p {
+        font-size: 1.5rem;
+    }
+    #four {
+        padding: 0 10%;
+    }
+    .four-heading {
+        font-size: 2.5rem;
+        padding: 15% 0% 2% 10%;
+    }
+    .trad-heading {
+        font-size: 4rem;
+        width: 40%;
+    }
+    .different {
+        font-size: 5rem;
+    }
+    .trad-p {
+        font-size: 1.6rem;
+        width: 45%;
+        line-height: 1.8;
+    }
+    .similar-block {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+    #eight {
+        padding-top: 4%;
+        height: 150vh;
+    }
+    .impact-heading {
+        font-size: 5rem;
+        width: 50%;
+    }
+    .impact-p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+    .transition-text {
+        font-size: 5rem;
+        overflow-y: visible;
+    }
+    .game-description {
+        font-size: 1.8rem;
+    }
+    .play-button {
+        font-size: 4rem;
+    }
+    .ten-title {
+        font-size: 2rem;
+    }
+    .ten-description {
+        font-size: 1.8rem;
+    }
+    .footer-text {
+        font-size: 1.5rem;
+    }
 }
