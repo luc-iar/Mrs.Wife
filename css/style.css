@@ -1279,14 +1279,14 @@ video {
     .nine-logo {
         width: 38%;
     }
+    .nine-container {
+        bottom: 12%;
+    }
     .game-description {
         font-size: 1.6rem;
     }
     .play-button {
         font-size: 3rem;
-    }
-    #ten {
-        margin: 0 5%;
     }
     .ten-title {
         font-size: 2rem;
