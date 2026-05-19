@@ -234,6 +234,7 @@ html, body {
     border: solid black 3px;
     padding: 0% 2%;
     z-index: 2;
+    align-content: center;
     display: none;
 }
 
@@ -251,7 +252,7 @@ html, body {
 
 .title {
     font-family: "Palm Canyon Drive";
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: black;
     text-align: center;
     padding: 2% 8% 4% 4%;
@@ -394,7 +395,7 @@ video {
 .description {
     font-family: Cambo;
     line-height: 1.5;
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     text-align: center;
     margin: 15% 4%;
 }
@@ -562,7 +563,7 @@ video {
     position: absolute;
     top: 35%;
     padding-left: 45%;
-    width: 240px;
+    width: 280px;
     /* display: none; */
 }
 
