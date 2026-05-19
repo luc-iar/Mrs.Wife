@@ -585,7 +585,7 @@ video {
         font-size: 1.6rem;
     }
     .result-info-container {
-        gap: 80px;
+        gap: 70px;
     }
     .info-title {
         height: 120px;
@@ -1159,7 +1159,7 @@ video {
 #ten {
     background-color: white;
     height: 80vh;
-    padding: 2% 5%;
+    margin: 2% 5%;
 }
 
 .ten-title {
@@ -1220,7 +1220,7 @@ video {
 
 @media only screen and (min-width: 2000px) {
     .nav a {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     .beige-subheading {
         font-size: 2.5rem;
@@ -1230,6 +1230,7 @@ video {
     }
     #four {
         padding: 0 10%;
+        height: 80vh;
     }
     .four-heading {
         font-size: 2.5rem;
@@ -1240,7 +1241,7 @@ video {
         width: 40%;
     }
     .different {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .trad-p {
         font-size: 1.6rem;
@@ -1248,7 +1249,7 @@ video {
         line-height: 1.8;
     }
     .similar-block {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 1.5;
     }
     #eight {
@@ -1256,28 +1257,42 @@ video {
         height: 150vh;
     }
     .impact-heading {
-        font-size: 5rem;
+        font-size: 4rem;
         width: 50%;
     }
     .impact-p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 1.5;
     }
     .transition-text {
-        font-size: 5rem;
+        font-size: 4rem;
         overflow-y: visible;
     }
+    #nine {
+        height: 110vh;
+        bottom: 12%;
+    }
+    .character-preview {
+        bottom: 10%;
+        width: 34%;
+    }
+    .nine-logo {
+        width: 38%;
+    }
     .game-description {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .play-button {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+    #ten {
+        margin: 0 5%;
     }
     .ten-title {
         font-size: 2rem;
     }
     .ten-description {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     .footer-text {
         font-size: 1.5rem;
