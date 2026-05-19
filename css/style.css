@@ -417,11 +417,11 @@ video {
 
 #fail-screen {
     transform: translate(-50%, -50%);
-    max-width: 60%;
+    width: 60%;
     height: 70%;
     background-image: url(../images/texture.png);
     background-size: cover;
-    border-radius: 50px;
+    border-radius: 80px;
     border: solid 6px black;
     position: absolute;
     z-index: 3;
