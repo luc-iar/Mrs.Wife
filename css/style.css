@@ -160,9 +160,9 @@ html, body {
 .energy-container {
     display: none;
     position: absolute;
-    left: 69%;
+    left: 68%;
     bottom: 10%;
-    width: max-content;
+    max-width: 30%;
     z-index: 3;
 }
 
