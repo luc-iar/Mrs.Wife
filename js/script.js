@@ -160,7 +160,6 @@ document.querySelectorAll('.button').forEach(button => {
         if (button.dataset.final === "true") {
             document.getElementById("result-screen").style.display = "flex";
             calendar.style.display = "none";
-            music.stop()
 
             if (starCount > 5) {
                 applause.play();
@@ -216,7 +215,7 @@ function resultInfo() {
     document.getElementById("result-screen").style.display = "none";
 }
 
-/*-------------------- MUSIC -----------------*/
+// /*-------------------- MUSIC -----------------*/
 
 var music = new Howl({
     src: ['../images/music.ogg'],
